@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="590dp"
+        android:layout_height="283dp"
+        android:padding="30dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="570dp"
+                android:layout_height="271dp">
+
+                <ImageView
+                    android:id="@+id/plant_img"
+                    android:layout_width="319dp"
+                    android:layout_height="match_parent"
+                    android:rotation="180"
+                    tools:srcCompat="@tools:sample/avatars" />
+                <TextView
+                    android:id="@+id/posTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#858181"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/plant_img"
+                    android:layout_marginLeft="40dp"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/r1"
+                    android:layout_toRightOf="@+id/plant_img">
+
+
+                    <TextView
+                        android:id="@+id/ptemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Temprature"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/phumi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ptemp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Humidity"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/psoil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phumi"
+                        android:layout_marginTop="10dp"
+                        android:hint="Soil Condition"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

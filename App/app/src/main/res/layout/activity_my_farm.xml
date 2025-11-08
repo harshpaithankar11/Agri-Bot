@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFarm">
+    <TextView
+        android:id="@+id/SelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="#777373"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="360dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/date_btn"
+        android:layout_toRightOf="@+id/SelectedDate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <TableLayout
+        android:id="@+id/tableGrid1"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:stretchColumns="3">
+
+
+    </TableLayout>
+
+</RelativeLayout>

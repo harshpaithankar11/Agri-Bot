@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/take_control"
+        android:layout_width="153dp"
+        android:layout_height="162dp"
+        app:srcCompat="@android:drawable/ic_menu_slideshow"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="takecontrol"
+        android:contentDescription="NULL"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Control"
+        android:layout_below="@+id/take_control"
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/my_farm"
+        android:layout_width="154dp"
+        android:layout_height="164dp"
+        app:srcCompat="@android:drawable/ic_dialog_dialer"
+        android:layout_toRightOf="@+id/take_control"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="myfarm"
+        android:contentDescription="NULL"
+
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Farm"
+        android:layout_below="@+id/my_farm"
+        android:layout_marginLeft="220dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+
+
+        />
+
+</RelativeLayout>
